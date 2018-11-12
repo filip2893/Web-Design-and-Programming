@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>korisnici_jquery</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Filip Strahija">
+        <meta name="description" content="Datum kreiranja: 20.4.2015.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="fstrahij.css">
+        <!--<link rel="stylesheet" type="text/css" href="fstrahij_mobitel.css" media="screen and (max-width : 450px)">
+        <link rel="stylesheet" type="text/css" href="fstrahij_tablet.css" media="screen and (max-width : 800px) and (min-width : 450px)">
+        <link rel="stylesheet" type="text/css" href="fstrahij_pc.css" media="screen and (max-width : 1000px) and (min-width : 800px)">
+        <link rel="stylesheet" type="text/css" href="fstrahij_tv.css" media="screen and (min-width : 1000px)">-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">
+        <script src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
+        
+    </head>
+    <body>
+        <header id="zaglavlje">
+            Zadaća 01-HTML/CSS
+            <br>
+            <img src="logo.png" alt="foi logo"/>            
+        </header>
+        <nav id="izbornik">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="prijava.html">Prijava</a></li>
+                <li><a href="registracija.html">Registracija</a></li>                
+                <li><a href="korisnici.html">Korisnici</a></li>
+                <li><a href="osobna.html">O meni</a></li>
+                <li><a href="http://www.foi.unizg.hr/" target="_blank">FOI</a></li>               
+                <li><a href="registracija_jquery.html">Registracija jquery</a></li>                
+                <li><a class="active" href="korisnici_jquery.html">Korisnici jquery</a></li>
+                <li><a href="gen_korisnici_jquery.html">Generirani korisnici jquery</a></li>
+            </ul>
+        </nav> 
+        <section id="sadrzaj">
+            <table id="korisnici">
+                <thead>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Slika</th>
+                        <th>Adresa</th>
+                        <th>Županija</th>
+                        <th>Grad</th>
+                        <th>E-mail</th>
+                        <th>Korisničko ime</th>
+                        <th>Lozinka</th>
+                        <th>Broj telefona</th>
+                        <th>Datum rođenja</th>
+                        <th>Spol</th>
+                        <th>Obavijest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hover">Filip</td>
+                        <td>Strahija</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Donji Pustakovec 129</td>
+                        <td>Međimurska</td>
+                        <td>Donji Pustakovec</td>
+                        <td>fstrahij@foi.hr</td>
+                        <td>fstrahij</td>
+                        <td>filipS</td>
+                        <td>0997036685</td>
+                        <td>28.1.1993.</td>
+                        <td>Muško</td>
+                        <td>Da</td>
+                    </tr>
+                    <tr>
+                        <td class="hover">Jurica</td>
+                        <td>Potočnjak</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Šenkovec 122</td>
+                        <td>Međimurska</td>
+                        <td>Šenkovec</td>
+                        <td>jpotocnj@foi.hr</td>
+                        <td>jpotocnj</td>
+                        <td>juraP</td>
+                        <td>0917771122</td>
+                        <td>19.2.1989.</td>
+                        <td>Muško</td>
+                        <td>Ne</td>
+                    </tr>
+                    <tr>
+                        <td>Jasenka</td>
+                        <td>Kovač</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Ilica 2</td>
+                        <td>Grad Zagreb</td>
+                        <td>Zagreb</td>
+                        <td>jkovac@foi.hr</td>
+                        <td>jkovac</td>
+                        <td>jasenkaK</td>
+                        <td>0956667774</td>
+                        <td>9.9.1964.</td>
+                        <td>Žensko</td>
+                        <td>Ne</td>
+                    </tr>
+                    <tr>
+                        <td>Marija</td>
+                        <td>Marković</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Ulica Slobode 53</td>
+                        <td>Splitsko-dalmatinska</td>
+                        <td>Split</td>
+                        <td>mmarkovic@foi.hr</td>
+                        <td>mmarkovic</td>
+                        <td>marijaM</td>
+                        <td>0989123748</td>
+                        <td>18.6.1998.</td>
+                        <td>Žensko</td>
+                        <td>Da</td>
+                    </tr>
+                    <tr>
+                        <td>Mislav</td>
+                        <td>Sraka</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Lipa 34</td>
+                        <td>Primorsko-goranska</td>
+                        <td>Rijeka</td>
+                        <td>msraka@foi.hr</td>
+                        <td>msraka</td>
+                        <td>mislavS</td>
+                        <td>0955556685</td>
+                        <td>30.10.1975.</td>
+                        <td>Muško</td>
+                        <td>Da</td>
+                    </tr>
+                    <tr>
+                        <td>Ivan</td>
+                        <td>Borović</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Pavlinska 12</td>
+                        <td>Varaždinska</td>
+                        <td>Varaždin</td>
+                        <td>iborovic@foi.hr</td>
+                        <td>iborovic</td>
+                        <td>ivanB</td>
+                        <td>0916729945</td>
+                        <td>7.7.1999.</td>
+                        <td>Muško</td>
+                        <td>Da</td>
+                    </tr>
+                    <tr>
+                        <td>Lana</td>
+                        <td>Strahija</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Donji Pustakovec 129</td>
+                        <td>Međimurska</td>
+                        <td>Donji Pustakovec</td>
+                        <td>lstrahij@foi.hr</td>
+                        <td>lstrahij</td>
+                        <td>lanaS</td>
+                        <td>0997126692</td>
+                        <td>15.6.1994.</td>
+                        <td>Žensko</td>
+                        <td>Ne</td>
+                    </tr>
+                    <tr>
+                        <td>Ivana</td>
+                        <td>Ivanić</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Ilica 19</td>
+                        <td>Zagreb</td>
+                        <td>Grad Zagreb</td>
+                        <td>iivanic@foi.hr</td>
+                        <td>iivanic</td>
+                        <td>ivanaI</td>
+                        <td>0918890102</td>
+                        <td>17.1.1991.</td>
+                        <td>Žensko</td>
+                        <td>Da</td>
+                    </tr>
+                    <tr>
+                        <td>Ilija</td>
+                        <td>Blažeka</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Kralja Tomislava 22</td>
+                        <td>Međimurska</td>
+                        <td>Čakovec</td>
+                        <td>iblazeka@foi.hr</td>
+                        <td>iblazeka</td>
+                        <td>ilijaB</td>
+                        <td>0956353367</td>
+                        <td>21.5.1977.</td>
+                        <td>Muško</td>
+                        <td>Ne</td>
+                    </tr>
+                    <tr>
+                        <td>Ivica</td>
+                        <td>Blažičko</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Ante Starčevića 45</td>
+                        <td>Međimurska</td>
+                        <td>Čakovec</td>
+                        <td>iblazicko@foi.hr</td>
+                        <td>iblazicko</td>
+                        <td>ivicaB</td>
+                        <td>0998985546</td>
+                        <td>2.2.1992.</td>
+                        <td>Muško</td>
+                        <td>Ne</td>
+                    </tr>
+                    <tr>
+                        <td>Tomislav</td>
+                        <td>Milanović</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Boškovićeva 31</td>
+                        <td>Grad Zagreb</td>
+                        <td>Zagreb</td>
+                        <td>tmilanovic@foi.hr</td>
+                        <td>tmilanovic</td>
+                        <td>tomiM</td>
+                        <td>0995036685</td>
+                        <td>17.1.1955.</td>
+                        <td>Muško</td>
+                        <td>Da</td>
+                    </tr>
+                    <tr>
+                        <td>Ines</td>
+                        <td>Dobra</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Frane Bulića 29</td>
+                        <td>Splitsko-dalmatinska</td>
+                        <td>Donji Pustakovec</td>
+                        <td>idobra@foi.hr</td>
+                        <td>idobra</td>
+                        <td>inesD</td>
+                        <td>0951112778</td>
+                        <td>19.11.2001.</td>
+                        <td>Žensko</td>
+                        <td>Da</td>
+                    </tr>
+                    <tr>
+                        <td>Jurica</td>
+                        <td>Potočnjak</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Kneza Trpimira 110</td>
+                        <td>Osječko-baranjska</td>
+                        <td>Osijek</td>
+                        <td>jpotocnjak@foi.hr</td>
+                        <td>jpotocnjak</td>
+                        <td>juraP</td>
+                        <td>0918896685</td>
+                        <td>21.12.2000.</td>
+                        <td>Muško</td>
+                        <td>Ne</td>
+                    </tr>
+                    <tr>
+                        <td>Marija</td>
+                        <td>Milković</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Vukovarska 12</td>
+                        <td>Osječko-baranjska</td>
+                        <td>Osijek</td>
+                        <td>mmilkovic@foi.hr</td>
+                        <td>mmilkovic</td>
+                        <td>marijaM</td>
+                        <td>0915551232</td>
+                        <td>17.12.1990.</td>
+                        <td>Žensko</td>
+                        <td>Da</td>
+                    </tr>
+                    <tr>
+                        <td>Filip</td>
+                        <td>Filipović</td>
+                        <td><img src="fstrahij.jpg" alt="osobna slika" height="50" width="50"/></td>
+                        <td>Ilica 112</td>
+                        <td>Grad Zagreb</td>
+                        <td>Zagreb</td>
+                        <td>ffilipovic@foi.hr</td>
+                        <td>ffilipovic</td>
+                        <td>filipF</td>
+                        <td>0997025594</td>
+                        <td>26.2.1993.</td>
+                        <td>Muško</td>
+                        <td>Da</td>
+                    </tr>
+                </tbody> 
+            </table>
+        </section>
+        <footer id="podnozje">
+            <address>
+                Kontakt:
+                <a href="mailto:fstrahij@foi.hr">Filip Strahija</a>                
+            </address>
+            <br>
+            <i>Sva prava pridržana, Web dizajn i programiranje, 2015</i>
+            <br>
+            <p>
+                Vrijeme potrebno za rješavanje aktivnog dokumenta: 4 sata<br>
+                Vrijeme potrebno za rješavanje cijelog dokumenta: 18.8 sata<br>
+
+            </p>
+            <div>
+                <a href="http://validator.w3.org/check?uri={uri}"><img src="https://mattur.files.wordpress.com/2011/07/logo-html5.png"
+                                                                                     alt="Valid HTML 5!" height="31" width="88" /></a>
+                <a href="https://jigsaw.w3.org/css-validator/"><img src="http://www.w3.org/Icons/valid-css.png"
+                                                                    alt="Valid CSS!" height="31" width="88" /></a>
+            </div>
+        </footer>
+        <script src="fstrahij_jquery.js" type="text/javascript"></script>
+    </body>
+</html>

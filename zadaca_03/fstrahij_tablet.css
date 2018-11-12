@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23.03.2015., 17:30:07
+    Author     : Filip
+*/
+
+nav#izbornik {
+    width: 100%;
+    float: none;
+    line-height: none;
+}
+#izbornik ul{
+    width: 100%;
+}
+#izbornik > ul li{
+    display: inline-block;
+}
+#izbornik > ul li:first-child a {
+    border-radius: 0;
+    border-top-style: none;
+}
+#izbornik > ul li:last-child a {
+    border-radius: 0;
+}
+
+#izbornik > ul li a:hover,
+#izbornik > ul li a.active{
+    padding: 11px 20px;       
+}
+section#sadrzaj{
+    width:95%;
+    margin-left: 0;
+}
+form{
+    width:95%;
+    margin-left: 0;
+}
+label{
+    text-align: left;
+    width: 50%;
+}
+.gumb{
+    margin-left: 0;
+    width: 100%;
+}
+#spolm, #spolz{    
+    margin-left: 50px;
+}
+#sadrzaj > section > div > img {
+    position: relative;
+    top: -80px;
+}
+#sadrzaj > section > div > h2 {
+    position: relative;
+    top: 130px;
+}

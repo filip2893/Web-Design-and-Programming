@@ -1,0 +1,34 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23.03.2015., 19:01:00
+    Author     : Filip
+*/
+body{
+    text-align: center;
+    width: 85%;
+}
+#izbornik > ul {   
+    width: 180px;
+}
+#izbornik > ul li a,section#sadrzaj,#sadrzajRegistracije, #sadrzajPrijave {
+    font-size: 19px;    
+}
+
+section#sadrzaj > section > h1, section#sadrzaj > section > h2{
+    font-size: 25px;
+}
+article > u, dt{
+    font-size: 20px;
+}
+
+.gumb{
+    margin-right: 200px;
+}
+
+td, th{
+    font-size: 16px;
+}

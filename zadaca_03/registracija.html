@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>registracija</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Filip Strahija">
+        <meta name="description" content="Datum kreiranja: 20.3.2015.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="fstrahij.css"/>
+        <!--<link rel="stylesheet" type="text/css" href="fstrahij_mobitel.css" media="screen and (max-width : 450px)">
+        <link rel="stylesheet" type="text/css" href="fstrahij_tablet.css" media="screen and (max-width : 800px) and (min-width : 450px)">
+        <link rel="stylesheet" type="text/css" href="fstrahij_pc.css" media="screen and (max-width : 1000px) and (min-width : 800px)">
+        <link rel="stylesheet" type="text/css" href="fstrahij_tv.css" media="screen and (min-width : 1000px)">-->
+    </head>
+    <body>
+        <header id="zaglavlje">
+            Zadaća 01-HTML/CSS
+            <br>
+            <img src="logo.png" alt="foi logo"/>            
+        </header>
+        <nav id="izbornik">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="prijava.html">Prijava</a></li>
+                <li><a class="active" href="registracija.html">Registracija</a></li>                
+                <li><a href="korisnici.html">Korisnici</a></li>
+                <li><a href="osobna.html">O meni</a></li>
+                <li><a href="http://www.foi.unizg.hr/" target="_blank">FOI</a></li>
+            </ul>
+        </nav>         
+        <section id="sadrzajRegistracije">  
+            <p id="greske"></p>
+                <form id="formaRegistracija" method="POST" name="formaRegistracija" action="http://arka.foi.hr/WebDiP/2014/materijali/zadace/ispis_forme.php">
+                    <label for="ime">Ime:</label>
+                    <input type="text" id="ime" name="ime" placeholder="ime">                
+                    <label for="prezime">Prezime:</label>
+                    <input type="text" id="prezime" name="prezime" placeholder="prezime">
+                    <label for="slika">Odaberite sliku:</label>
+                    <input type="file" id="slika" name="slika">
+                    <label for="adresa">Adresa:</label>
+                    <textarea id="adresa" name="adresa" placeholder="adresa"  wrap="soft" rows="1"></textarea> 
+                    <label for="zupanija">Odaberite županiju:</label>
+                    <select id="zupanija" name="zupanija">
+                        <optgroup label="SJEVEROZAPADNA HRVATSKA">
+                            <option value="0" >Grad Zagreb</option>
+                            <option value="1" >Zagrebačka</option>
+                            <option value="2" >Krapinsko-zagorska</option>
+                            <option value="3" >Međimurska</option>
+                            <option value="4" selected>Varaždinska</option>
+                            <option value="5">Koprivničko-križevačka</option>
+                        </optgroup>
+                        <optgroup label="SREDIŠNJA I ISTOČNA(PANONSKA) HRVATSKA">
+                            <option value="6" >Bjelovarsko-bilogorska</option>
+                            <option value="7" >Virovitičko-podravska</option>
+                            <option value="8" >Požeško-slavonska</option>
+                            <option value="9" >Brodsko-posavska</option>
+                            <option value="10" >Osječko-baranjska</option>
+                            <option value="11" >Vukovarsko-srijemska</option>
+                            <option value="12" >Karlovačka</option>
+                            <option value="13" >Sisačko-moslavačka</option>
+                        </optgroup>                       
+                        <optgroup label="JADRANSKA HRVATSKA">
+                            <option value="14" >Primorsko-goranska</option>
+                            <option value="15" >Ličko-senjska</option>
+                            <option value="16" >Zadarska</option>
+                            <option value="17" >Šibensko-kninska</option>
+                            <option value="18" >Splitsko-dalmatinska</option>
+                            <option value="19" >Istarska</option>
+                            <option value="20" >Dubrovačko-neretvanska</option>                        
+                    </select>
+                    <label for="grad">Grad:</label>
+                    <input type="text" id="grad" name="grad" placeholder="grad">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="korisničko_ime@foi.hr">
+                    <label for="tel">Broj telefona:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="xxx-xxxxxxx">
+                    <label for="korime">Korisničko ime:</label>
+                    <input type="text" id="korime" name="korime" placeholder="korisničko ime">
+                    <label for="lozinka">Lozinka:</label>
+                    <input type="password" id="lozinka" name="lozinka" placeholder="lozinka">
+                    <label for="datum">Datum rođenja:</label> 
+                    <input type="date" id="datum" name="datum"><br>                
+                    <label for="spolm">Spol:</label>
+                    <input type="radio" id="spolm" name="spol" value="musko" autofocus="autofocus"><div class="radiotext">Muško</div>
+                    <input type="radio" id="spolz" name="spol" value="zensko" autofocus="autofocus"><div class="radiotext">Žensko</div>
+                    <label for="obavijest">Želite li primati obavijest putem elektroničke pošte?</label>
+                    <input type="checkbox" id="obavijest" name="obavijest" autofocus="autofocus"><br>
+                    <button class="gumb" type="submit" name="slanje">Pošalji</button>  
+                    <button class="gumb" type="reset" name="brisanje">Obriši</button>                
+                </form>
+        </section>
+        <footer id="podnozje">
+            <address>
+                Kontakt:
+                <a href="mailto:fstrahij@foi.hr">Filip Strahija</a>                
+            </address>
+            
+            
+            <br>
+            <i>Sva prava pridržana, Web dizajn i programiranje, 2015</i>
+            <br>
+            <p>
+                Vrijeme potrebno za rješavanje aktivnog dokumenta: 4.5 sata<br>
+                Vrijeme potrebno za rješavanje cijelog dokumenta: 18.8 sata<br>
+
+            </p>
+            <div>
+                <a href="http://validator.w3.org/check?uri={uri}"><img src="https://mattur.files.wordpress.com/2011/07/logo-html5.png"
+                                                                                     alt="Valid HTML 5!" height="31" width="88" /></a>
+                <a href="https://jigsaw.w3.org/css-validator/"><img src="http://www.w3.org/Icons/valid-css.png"
+                                                                    alt="Valid CSS!" height="31" width="88" /></a>
+            </div>
+            <script src="fstrahij_jquery.js" type="text/javascript"></script>
+        </footer>
+    </body>
+</html>
