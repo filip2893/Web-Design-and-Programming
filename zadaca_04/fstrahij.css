@@ -1,0 +1,153 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10.03.2015., 16:55:39
+    Author     : vjezbe9
+*/
+/*komentar*/
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 95%;    
+}
+
+header{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #ffffff;
+    
+    background-color: #E4433C;
+    background-size: 250px;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+nav#navigacija{
+    display: inline-block;
+    padding: 5px 5px;
+    width: 300px;
+     float: left;
+}
+#navigacija > ul{
+    list-style: none;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+#navigacija > ul li a{
+    display: block;
+    color:#E4433C;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #eaeaea;
+    
+    border-top-style: dotted;
+    border-width: 1px;
+    border-color: #000000;
+    padding: 11px 20px;    
+}
+
+#navigacija >ul li:first-child a{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: none;
+}
+
+#navigacija >ul li:last-child a{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; 
+}
+#navigacija > ul li a:hover{
+    color:white;
+    background-color: #f23f37;
+}
+
+section#sadrzaj{
+    padding: 5px 5px;
+    margin-left: 10px;
+    width: 50%;
+    float: left;
+}
+footer{
+    width: 100%;
+    clear:both;
+    text-align: center;
+     float: left;
+}
+footer > address > a:visited,
+footer > address > a {
+    color: green;    
+}
+
+.gumb{
+    backface-visibility: #ccc;
+    cursor: pointer;
+}
+form {
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+label{
+    margin-top: 5px;
+    margin-bottom: 5px;   
+    width: 30%;
+    clear: both;
+     float: left;
+}
+
+
+input{
+    width: 60%;    
+}
+table{
+    border-collapse: inherit;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+}
+th{
+    background-color: #E4433C;
+    border-style: none;
+    color: #eaeaea;
+    font-size: 12px;
+    padding: 8px;
+}
+td{
+    background-color: #eaeaea;
+    border-style: none;
+    color:#555555;
+    padding: 4px; 
+    font-size: 12px;
+}
+
+@media only screen and(max-width731px) and (min-width:451px){
+    header{
+        background-image: none;
+        font-size: large;
+    }
+    section#sadrzaj{
+    width: 60%;
+    }
+    nav#navigacija{
+        width: 30%;
+    }
+    #navigacija >ul{
+        width: 95%;
+    }
+}
+
